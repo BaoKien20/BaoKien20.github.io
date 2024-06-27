@@ -8,11 +8,13 @@ const inter = Inter({ subsets: ["latin"] });
 
 interface Props {}
 export async function generateMetadata(): Promise<Metadata> {
-    const description = "Kmovie - Xem phim online xem trên điện thoại di động và máy tính nhanh nhất. Là một website xem phim miễn phí tốt nhất.";
+    const description =
+        "Kmovie - Nền tảng xem phim trực tuyến hàng đầu với hàng ngàn bộ phim đa dạng, miễn phí, phù hợp xem trên điện thoại di động và máy tính. Khám phá ngay các bộ phim hot nhất và trải nghiệm công nghệ xem phim tiên tiến cùng Kmovie.";
+
     return {
         title: {
-            template: "%s | KMovie",
-            default: "KMovie",
+            template: "%s | Kmovie",
+            default: "Kmovie - Xem phim trực tuyến miễn phí",
         },
         description,
         icons: {
@@ -22,10 +24,10 @@ export async function generateMetadata(): Promise<Metadata> {
         openGraph: {
             type: "website",
             locale: "vi",
-            url: "https://kmovie-one.vercel.app/",
+            url: "https://kmovie.me/",
             description,
-            siteName: "KMovie",
-            alternateLocale: "https://kmovie-one.vercel.app/",
+            siteName: "kmovie",
+            alternateLocale: "https://kmovie.me/",
         },
     };
 }

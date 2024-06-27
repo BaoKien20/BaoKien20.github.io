@@ -16,13 +16,21 @@ const Header = () => {
         <nav id="header-app" className="w-full h-[72px] sticky transition-all duration-500 top-0 block z-10 bg-mainBackground shadow-lg">
             <div className=" App-header mx-auto items-center justify-between gap-5 max-w-screen-laptop px-6 flex  h-[117px] sm:h-[70px] w-full ">
                 <Link href={"/"} className="object-cover cursor-pointer h-fit ">
-                    <Image sizes="150px" loading="lazy" height={70} width={90} className="tablet:block max-w-[90px] hidden" alt="Logo" src={Logo} />
+                    <Image
+                        sizes="150px"
+                        loading="lazy"
+                        height={70}
+                        width={90}
+                        className="tablet:block max-w-[90px] hidden"
+                        alt="Kmovie-Logo"
+                        src={Logo}
+                    />
                     <Image
                         sizes="50px"
                         loading="lazy"
                         height={50}
                         width={50}
-                        alt="Logo"
+                        alt="Kmovie-Logo"
                         className="block h-auto max-w-[50px] tablet:hidden"
                         src={Logo_Small}
                     />

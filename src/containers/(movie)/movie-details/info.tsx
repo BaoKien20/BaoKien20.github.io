@@ -21,7 +21,7 @@ const Info = ({ movie }: InfoProps) => {
                             priority
                             rel="preload"
                             loading="eager"
-                            alt="thumbnail"
+                            alt="kmovie-thumbnail"
                             fill
                             className="object-cover rounded"
                         />

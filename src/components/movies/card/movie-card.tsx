@@ -29,7 +29,7 @@ const MovieCard = (props: MovieCardProp) => {
                     placeholder={enableBlur && movie.blurImage ? "blur" : "empty"}
                     blurDataURL={movie.blurImage}
                     quality={quality}
-                    alt={"thumbnail " + movie.name}
+                    alt={"kmovie-thumbnail-" + movie.name}
                     className="transform object-cover  brightness-90 transition group-hover:brightness-110"
                     sizes="(max-width: 640px) 200px, (max-width: 1280px) 200px,250px"
                 />
