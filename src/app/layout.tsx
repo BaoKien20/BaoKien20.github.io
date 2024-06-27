@@ -7,25 +7,25 @@ import LayoutProvider from "@/providers/layout-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 interface Props {}
-export async function generateMetadata({}: Props, parent: ResolvingMetadata): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
+    const description = "Kmovie - Xem phim online xem trên điện thoại di động và máy tính nhanh nhất. Là một website xem phim miễn phí tốt nhất.";
     return {
         title: {
             template: "%s | KMovie",
             default: "KMovie",
         },
-        description: "Kmovie - Xem phim online xem trên điện thoại di động và máy tính nhanh nhất. Là một website xem phim miễn phí tốt nhất.",
+        description,
         icons: {
-            icon: ["/favicon.ico"],
-            apple: ["/favicon.ico"],
+            icon: "/favicon.ico",
+            apple: "/favicon.ico",
         },
         openGraph: {
             type: "website",
             locale: "vi",
-            url: `https://kmovie-one.vercel.app/`,
-            description:
-                "Kmovie - Xem phim anime vietsub online xem trên điện thoại di động và máy tính nhanh nhất. Là một website xem phim miễn phí tốt nhất.",
+            url: "https://kmovie-one.vercel.app/",
+            description,
             siteName: "KMovie",
-            alternateLocale: [`https://kmovie-one.vercel.app/`],
+            alternateLocale: "https://kmovie-one.vercel.app/",
         },
     };
 }
