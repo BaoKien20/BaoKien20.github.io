@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fnam\u002F[year]","\u002Fphim\u002F[slug]","\u002Fphim\u002F[slug]\u002F[episode]","\u002Fquoc-gia\u002F[country]","\u002Fthe-loai\u002F[category]"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()

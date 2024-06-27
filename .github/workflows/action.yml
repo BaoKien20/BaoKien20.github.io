@@ -24,6 +24,16 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+    CI: true
+    PROJECT_ID: ${{ secrets.PROJECT_ID_PRODUCTION }}
+    NEXT_PUBLIC_SITE_URL: ${{secrets.NEXT_PUBLIC_SITE_URL}}
+    NEXT_PUBLIC_MODE: ${{secrets.NEXT_PUBLIC_MODE}}
+    NEXT_PUBLIC_API_URL: ${{secrets.NEXT_PUBLIC_API_URL}}
+
+
+   
+
 jobs:
   # Build job
   build:
