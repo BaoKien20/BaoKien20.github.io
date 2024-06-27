@@ -4,7 +4,8 @@ import { Metadata } from "next";
 export async function generateMetadata(): Promise<Metadata> {
     return {
         title: `Phim theo dõi - kmovies`,
-    };
+    }; 
+    
 }
 export default async function Page({ searchParams }: { searchParams?: { [key: string]: string | undefined } }) {
     return (
